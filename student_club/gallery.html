@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+
+
+<div class="header" id="myHeader">
+  <h1>Cricket Photo Gallery</h1>
+  <p>Click on the buttons to change the. images view.</p>
+  <a href="index.html"><h3 style="color: #f1f1f1;">-->> Home  </h3></a>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+
+<div class="row"> 
+  <div class="column">
+    <img src="./images/gallery3.jpg" style="width:100%">
+    <img src="./images/gallery1.jpg" style="width:100%">
+    <img src="./images/gallery2.jpg" style="width:100%">
+    <img src="./images/gallery3.jpg" style="width:100%">
+    <img src="./images/gallery1.jpg" style="width:100%">
+    <img src="./images/gallery2.jpg" style="width:100%">
+    <img src="./images/gallery3.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./images/gallery1.jpg" style="width:100%">
+    <img src="./images/gallery2.jpg" style="width:100%">
+    <img src="./images/gallery3.jpg" style="width:100%">
+    <img src="./images/gallery1.jpg" style="width:100%">
+    <img src="./images/gallery2.jpg" style="width:100%">
+    <img src="./images/gallery3.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="./images/gallery3.jpg" style="width:100%">
+    <img src="./images/gallery2.jpg" style="width:100%">
+    <img src="./images/gallery1.jpg" style="width:100%">
+    <img src="./images/gallery3.jpg" style="width:100%">
+    <img src="./images/gallery2.jpg" style="width:100%">
+    <img src="./images/gallery1.jpg" style="width:100%">
+    <img src="./images/gallery3.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./images/gallery3.jpg" style="width:100%">
+    <img src="./images/gallery3.jpg" style="width:100%">
+    <img src="./images/gallery3.jpg" style="width:100%">
+    <img src="./images/gallery3.jpg" style="width:100%">
+    <img src="./images/gallery3.jpg" style="width:100%">
+    <img src="./images/gallery3.jpg" style="width:100%">
+  </div>
+</div>
+
+
+
+<script>
+
+var elements = document.getElementsByClassName("column");
+
+
+var i;
+
+
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  
+    elements[i].style.flex = "100%";
+  }
+}
+
+
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  
+    elements[i].style.flex = "50%";
+  }
+}
+
+
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  
+    elements[i].style.flex = "25%";
+  }
+}
+
+
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

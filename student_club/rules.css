@@ -1,0 +1,60 @@
+/* Style for the footer */
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    background-image:url(/img/breadcrumb.jpg) ;
+  }
+  
+  .footer-newsletter h4 {
+    font-size: 30px;
+    font-family: cursive;
+  }
+  
+  /* Style for the breadcrumb section */
+  .breadcumb-wrapper {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  .breadcumb-title {
+    color: #333;
+    font-size: 28px;
+  }
+  
+  .breadcumb-menu li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  /* Style for the table */
+  .table-bordered {
+    border: 1px solid #ccc;
+  }
+  
+  .table-bordered td,
+  .table-bordered th {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  /* Style for the footer widget */
+  .widget-area {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .widget.footer-widget {
+    margin-bottom: 30px;
+  }
+  
+  .widget_title {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .vs-widget-about p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
